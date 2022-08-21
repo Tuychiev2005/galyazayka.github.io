@@ -193,38 +193,42 @@ body {
   font-size: 40px;
 }
 
-input {
-    margin: 10px;
-    padding: 5px;
-    border-radius: 20px;
-    outline: none;
-    cursor: default;
-    border-color: rgba(33, 21, 43, 0.2);  
-    transition: all 0.3s ease-in-out;
-    color: #fff;
-    background-color:rgba(33, 21, 43, 0.2);
-    text-align: center;
+
+.typewrite > .wrap { 
+  border-right: 0.08em solid black
+
 }
 
-input:focus {
-    border: 0.6px solid #cbafff;
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-.popup {
-    display: block;
-    text-align: center;
-    text-align: -moz-center;
-    text-align: -webkit-center;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    max-height: 90%;
-    width: 90%;
-    overflow: auto;
-    margin: 2%;
-    padding: 1%;
-    background-color:rgba(33, 21, 43, 0.5);
-    font-size: 11px;
-    border-radius: 10px;
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media only screen and (max-width:780px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  .content {
+    height: 30vh;
+  }
+  h1 {
+    font-size: 24px;
+  }
 }
