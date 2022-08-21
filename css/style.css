@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -151,126 +152,7 @@ body {
     background: linear-gradient(to left, #b58dff, #cbafff);
 }
 
-.button {
-    cursor: pointer;
-    display: inline-block;
-    font-family: 'Raleway-Bold', sans-serif;
-    color: #fff;
-    text-decoration: none;
-    margin: 7px;
-    padding: 7px;
-    font-size: 15px;
-    border: 0.6px solid #cbafff;
-    border-radius: 50px;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-}
 
-.button:hover {
-    color: #21152b;
-    background-color: #cbafff;
-    text-decoration: none;
-}
-
-.button:active {
-    color: #21152b;
-    background-color: #cbafff;
-    text-decoration: none;
-    padding: 2%;
-}
-
-.mail:hover {
-    color: #21152b;
-    background-color: #cbafff;
-}
-
-*:focus {
-    outline: none;
-}
-
-.link {
-    text-decoration: none;
-    font-family: 'Raleway-Bold', sans-serif;
-    background: linear-gradient(to left, #b58dff, #cbafff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 10px;
-}
-
-.projects-head {
-    text-align: left;
-    display: block;
-    margin: 20px;
-    padding: 10px;
-    color: #fff;
-    background-color: rgba(33, 21, 43, 0.9);
-    font-size: 20px;
-    font-family: 'Raleway-Bold', sans-serif;
-    border-radius: 10px;
-}
-
-.projects-content {
-    display: block;
-    margin: 2%;
-    padding: 1%;
-    background-color:rgba(33, 21, 43, 0.3);
-    font-size: 11px;
-    border-radius: 10px;
-}
-
-.projects-bot {
-    position: relative;
-    padding-bottom: 50px;
-    display: inline-block;
-    vertical-align: top;
-    width: 330px;
-    height: 260px;
-    max-width: 95%;
-    margin: 10px;
-    padding: 10px;
-    background-color:rgba(33, 21, 43, 0.8);
-    color: #cbafff;
-    font-size: 11px;
-    border-radius: 10px;
-}
-
-.spoiler {
-    display: block;
-    width: 80%;
-    padding: 1%;
-    background-color:rgba(33, 21, 43, 0.8);
-    color: #cbafff;
-    font-size: 11px;
-    border-radius: 10px;
-}
-
-.bot-img {
-    border-radius: 100%;
-    width: 75px;
-}
-
-.btn-bot {
-    margin: auto;
-    position: absolute;
-    bottom: 10px;
-    right: 25%;
-    width: 50%;
-}
-
-.btn-donate {
-    padding: 1%;
-    font-size: 10px;
-    background-color:rgba(33, 21, 43, 0.8);
-}
-
-.input-donate {
-    padding: 1%;
-    font-size: 15px;
-    border: 0px;
-    color: #fff;
-    background-color:rgba(33, 21, 43, 0.8);
-}
 
 .social a {
     text-align: center;
@@ -293,29 +175,22 @@ body {
     -moz-transform: translate(60px,17px); /** Firefox **/
     text-align: center;
 }
-
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+.telegram a{
+    transform: translate(50px,17px);
+    -webkit-transform: translate(50px,17px); /** Chrome & Safari **/
+    -o-transform: translate(50px,17px); /** Opera **/
+    -moz-transform: translate(50px,17px); /** Firefox **/
+    text-align: center;
 }
-
-/* Firefox */
-input[type=number] {
-    -moz-appearance: textfield;
+.github a:hover {
+  transition: 1s;
+  background: #191919; color: rgba(205, 214, 219, 1);
+  font-size: 40px;
 }
-
-.btn-alt {
-    font-family: 'Raleway-SemiBold', sans-serif;
-    border: 0px;
-    font-size: 15px;
-}
-
-.btn-big {
-    width: 30%;
-    font-size: 20px;
+.telegram a:hover {
+  transition: 1s;
+  background: SteelBlue; color: rgba(205, 214, 219, 1);
+  font-size: 40px;
 }
 
 input {
