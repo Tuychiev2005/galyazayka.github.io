@@ -136,6 +136,13 @@ video.avatar {
     -moz-transform: translate(60px,17px); /** Firefox **/
     text-align: center;
 }
+.Qiwi a{
+    transform: translate(50px,17px);
+    -webkit-transform: translate(50px,17px); /** Chrome & Safari **/
+    -o-transform: translate(50px,17px); /** Opera **/
+    -moz-transform: translate(50px,17px); /** Firefox **/
+    text-align: center;
+}
 .telegram a{
     transform: translate(50px,17px);
     -webkit-transform: translate(50px,17px); /** Chrome & Safari **/
@@ -146,6 +153,10 @@ video.avatar {
 .github a:hover {
   transition: 1s;
   background: #191919; color: rgba(205, 214, 219, 1);
+  font-size: 40px;
+.Qiwi a:hover {
+  transition: 1s;
+  background: SteelBlue; color: rgba(205, 214, 219, 1);
   font-size: 40px;
 }
 .telegram a:hover {
