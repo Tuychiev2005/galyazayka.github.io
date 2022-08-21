@@ -73,85 +73,88 @@ body {
     width: 100%;
 }
 
-.cent-ly {
-    text-align: center;
-    text-align: -moz-center;
-    text-align: -webkit-center;
-    margin: auto;
-    width: 70%;
-    height: 100%;
+div.block{
+  border-radius: 20px;
+  width: 250px;
+  height: 380px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  margin: -125px 0 0 -125px;
+  background: rgba(255, 255, 255, 0.45);
+}
+video.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 5px;
+  filter:opacity(100%);
+}
+.header {
+  position: relative;
+  text-align: center;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  color: white;
+}
+.logo {
+  width: 50px;
+  fill: white;
+  padding-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.inner-header {
+  height: 65vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.flex {
+  /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+.content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: white;
 }
 
-@media only screen and (orientation: landscape) {
-    .cent-ly {
-        width: 70%;
-    }
+/* Animation */
+.parallax>use {
+  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
 }
-
-@media only screen and (orientation: portrait) {
-    .cent-ly {
-        width: 98%;
-    }
+.parallax>use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
 }
-
-.cent-ly {
-    padding-top: 10px;
-    line-height: 1.5;
-    max-width: 500px;
+.parallax>use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
 }
-
-*::selection {
-    color: #fff;
-    background: #21152b;
+.parallax>use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
 }
-
-.animated {
-    animation-duration: 1s;
-    animation-fill-mode: both;
+.parallax>use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
 }
-
-.text-main {
-    font-family: 'Raleway-Bold', sans-serif;
-    font-size: 70px;
-    background: linear-gradient(to left, #b58dff, #cbafff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.text-sub {
-    font-family: 'Raleway-Light', sans-serif;
-    font-size: 20px;
-    background: linear-gradient(to left, #b58dff, #d6bfff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.text {
-    font-family: 'Raleway-Regular', sans-serif;
-    font-size: 15px;
-    color: #cbafff;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.title {
-    font-family: 'Raleway-Bold', sans-serif;
-    color: #fff;
-    font-size: 25px;
-}
-
-.sub-title {
-    font-family: 'Raleway-Bold', sans-serif;
-    color: #fff;
-    font-size: 20px;
-}
-
-.line {
-    height: 0.4px;
-    width: 30%;
-    background: linear-gradient(to left, #b58dff, #cbafff);
-}
-
 
 
 .social a {
@@ -192,7 +195,6 @@ body {
   background: SteelBlue; color: rgba(205, 214, 219, 1);
   font-size: 40px;
 }
-
 
 .typewrite > .wrap { 
   border-right: 0.08em solid black
