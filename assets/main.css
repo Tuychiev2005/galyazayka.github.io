@@ -121,7 +121,7 @@ body {
 .text-sub {
     font-family: 'Raleway-Light', sans-serif;
     font-size: 20px;
-    background: linear-gradient(to left, #FFFF00, #000000);
+    background: linear-gradient(to left, #00FFFF, #FFFF00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -129,7 +129,7 @@ body {
 .text {
     font-family: 'Raleway-Regular', sans-serif;
     font-size: 20px;
-    color: #8B008B;
+    color: #C0C0C0;
     margin-top: 20px;
     margin-bottom: 20px;
 }
